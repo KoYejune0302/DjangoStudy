@@ -22,5 +22,5 @@ class Comment(models.Model):
     parent_note = models.ForeignKey(Note, on_delete=models.CASCADE, related_name='comment', default=None, blank=True)
 
 class Course(models.Model):
-    id = models.TextField(max_length=100)
+    class_id = models.TextField(max_length=100)
     title = models.TextField(max_length=100)
